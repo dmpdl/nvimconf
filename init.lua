@@ -12,9 +12,9 @@ require("dmpdl.plugins.cmp")
 require("dmpdl.plugins.trouble")
 require("dmpdl.plugins.gitsigns")
 require("dmpdl.plugins.autocloser")
+require("dmpdl.plugins.ray-x")
 
 -- lsp
 require("dmpdl.plugins.lsp.lspconf")
 require("dmpdl.plugins.lsp.mason")
 require("dmpdl.plugins.lsp.null-ls")
-require("dmpdl.plugins.lsp.ray-x")

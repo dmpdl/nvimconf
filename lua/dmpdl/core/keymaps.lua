@@ -57,3 +57,6 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 
 -- troubles
 keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<cr>") -- open troubles
+
+-- ray-x golang
+keymap.set("n", "gfs", "<cmd>GoFillStruct<cr>")

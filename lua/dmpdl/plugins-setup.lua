@@ -73,6 +73,7 @@ return packer.startup(function(use)
 	use("neovim/nvim-lspconfig") -- easily configure language servers
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
+	use("rmagatti/goto-preview") -- pretty go to preview
 
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
