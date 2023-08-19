@@ -27,7 +27,12 @@ keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 -- n <leader>sv -- split window vertical
 -- n <leader>sh -- split window horizontally
 -- n <leader>h,j,k,l -- move between windows
+keymap.set("n", "<A-Up>", "<cmd>resize +2<cr>")
+keymap.set("n", "<A-Down>", "<cmd>resize -2<cr>")
+keymap.set("n", "<A-Left>", "<cmd>vertical resize -2<cr>")
+keymap.set("n", "<A-Right>", "<cmd>vertical resize +2<cr>")
 
+-- tabs management
 keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
