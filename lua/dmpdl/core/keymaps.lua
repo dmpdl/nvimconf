@@ -6,6 +6,9 @@ local keymap = vim.keymap
 -- General Keymaps
 ---------------------
 
+-- update buffers when files updated(git checkout).
+keymap.set("n", "<leader>u", "<cmd>:bufdo e!<cr>")
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
@@ -33,10 +36,10 @@ keymap.set("n", "<A-Left>", "<cmd>vertical resize -2<cr>")
 keymap.set("n", "<A-Right>", "<cmd>vertical resize +2<cr>")
 
 -- tabs management
-keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
-keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
-keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
-keymap.set("n", "<leader>tb", ":tabp<CR>") --  go to previous tab
+keymap.set("n", "<leader>t", ":tabnew<CR>") -- open new tab
+keymap.set("n", "<leader>x", ":tabclose<CR>") -- close current tab
+keymap.set("n", "<C-]>", ":tabn<CR>") --  go to next tab
+keymap.set("n", "<C-[>", ":tabp<CR>") --  go to previous tab
 
 ----------------------
 -- Plugin Kymaps
@@ -46,10 +49,10 @@ keymap.set("n", "<leader>tb", ":tabp<CR>") --  go to previous tab
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>e", ":Explore<CR>") -- toggle file explorer
 
 -- telescope
-keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
+keymap.set("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>") -- find files within current working directory, respects .gitignore
 keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance

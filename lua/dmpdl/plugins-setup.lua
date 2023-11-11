@@ -36,6 +36,7 @@ return packer.startup(function(use)
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 	use("folke/tokyonight.nvim") -- preferred colorscheme
 	use("catppuccin/vim")
+	use("NLKNguyen/papercolor-theme")
 
 	-- windows
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
@@ -45,7 +46,7 @@ return packer.startup(function(use)
 	use("numToStr/Comment.nvim")
 
 	-- file explorer
-	use("nvim-tree/nvim-tree.lua")
+	-- use("nvim-tree/nvim-tree.lua")
 
 	-- statusline
 	use("nvim-lualine/lualine.nvim")
@@ -93,7 +94,7 @@ return packer.startup(function(use)
 
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
-	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
+	-- use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
@@ -105,6 +106,11 @@ return packer.startup(function(use)
 	-- auto brackets
 	use("m4xshen/autoclose.nvim")
 
+	-- multiline cursor
+	use("terryma/vim-multiple-cursors")
+
+	-- git show line commits
+	use("rhysd/git-messenger.vim")
 	if packer_bootstrap then
 		require("packer").sync()
 	end

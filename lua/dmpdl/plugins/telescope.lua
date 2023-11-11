@@ -24,6 +24,7 @@ telescope.setup({
 
 		file_ignore_patterns = {
 			"vendor",
+			".git/",
 		},
 	},
 })
