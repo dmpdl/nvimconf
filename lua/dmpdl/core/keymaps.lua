@@ -39,9 +39,10 @@ keymap.set("n", "<A-Right>", "<cmd>vertical resize +2<cr>")
 keymap.set("n", "<leader>t", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>x", ":q<CR>") -- close current tab
 keymap.set("n", "<leader>xa", ":%bd<CR>") -- close all current tabs
-keymap.set("n", "<C-]>", ":tabn<CR>") --  go to next tab
-keymap.set("n", "<C-[>", ":tabp<CR>") --  go to previous tab
+keymap.set("n", "<A-[>", ":tabp<CR>") --  go to previous tab
+keymap.set("n", "<A-]>", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>dt", ":tab split<CR>") -- duplicate current tab
+keymap.set("n", "<leader>cf", ":let @*=fnamemodify(expand('%'), ':~:.') <CR>") -- copy current relative file path
 
 ----------------------
 -- Plugin Kymaps
@@ -59,6 +60,7 @@ keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+keymap.set("n", "<leader>fb", "<cmd>Telescope file_browser<cr>") -- open file
 
 -- troubles
 keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<cr>") -- open troubles
