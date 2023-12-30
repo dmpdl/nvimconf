@@ -39,8 +39,8 @@ keymap.set("n", "<A-Right>", "<cmd>vertical resize +2<cr>")
 keymap.set("n", "<leader>t", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>x", ":q<CR>") -- close current tab
 keymap.set("n", "<leader>xa", ":%bd<CR>") -- close all current tabs
-keymap.set("n", "<C-]>", ":tabn<CR>") --  go to next tab
-keymap.set("n", "<C-[>", ":tabp<CR>") --  go to previous tab
+keymap.set("n", "<C-o>", ":tabp<CR>") --  go to previous tab
+keymap.set("n", "<C-p>", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>dt", ":tab split<CR>") -- duplicate current tab
 
 ----------------------
