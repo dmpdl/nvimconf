@@ -33,10 +33,11 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
 	-- colorschemes
-	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-	use("folke/tokyonight.nvim") -- preferred colorscheme
+	use("bluz71/vim-nightfly-guicolors")
+	use("folke/tokyonight.nvim")
 	use("catppuccin/vim")
 	use("NLKNguyen/papercolor-theme")
+	use("navarasu/onedark.nvim")
 
 	-- windows
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
@@ -70,18 +71,18 @@ return packer.startup(function(use)
 	use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
 	use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
 
-	-- configuring lsp servers
-	use("neovim/nvim-lspconfig") -- easily configure language servers
-	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
-	use("rmagatti/goto-preview") -- pretty go to preview
-
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 	use("mattn/vim-goimports") -- golang imports
 	use("ray-x/go.nvim")
 	use("ray-x/guihua.lua")
+
+	-- configuring lsp servers
+	use("neovim/nvim-lspconfig") -- easily configure language servers
+	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
+	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
+	use("rmagatti/goto-preview") -- pretty go to preview
 
 	-- treesitter configuration
 	use({
