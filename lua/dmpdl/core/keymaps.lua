@@ -52,7 +52,7 @@ keymap.set("n", "<leader>cf", ":let @*=fnamemodify(expand('%'), ':~:.') <CR>") -
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":Explore<CR>") -- toggle file explorer
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>") -- find files within current working directory, respects .gitignore
@@ -60,7 +60,6 @@ keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
-keymap.set("n", "<leader>fb", "<cmd>Telescope file_browser<cr>") -- open file
 
 -- troubles
 keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<cr>") -- open troubles
